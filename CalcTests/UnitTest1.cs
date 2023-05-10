@@ -21,7 +21,7 @@ public class Tests
         Assert.That(Expected, Is.EqualTo(cal.Add(First, Second)));
     }
 
-    [TestCase(10, 2, 4)]
+    [TestCase(8, 2, 4)]
     [TestCase(100, 50, 2)]
     [TestCase(110, 11, 10)]
     public void MultiplyTests(int Expected, int First, int Second)
@@ -39,7 +39,7 @@ public class Tests
     }
 
     [Test]
-    [Ignore("Test is broken. Working on fix")]
+    //[Ignore("Test is broken. Working on fix")]
     public void DivideZeroTest()
     {
         Assert.Throws<DivideByZeroException>(() => cal.Divide(3, 0));
