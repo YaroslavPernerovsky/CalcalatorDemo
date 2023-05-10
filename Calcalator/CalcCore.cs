@@ -21,6 +21,11 @@ namespace Calcalator
         {
 			return x * y;
         }
+
+        public int Multiply2(int x, int y)
+        {
+            return x * y * 2;
+        }
     }
 }
 
