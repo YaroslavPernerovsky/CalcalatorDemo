@@ -30,8 +30,8 @@ public class Tests
     }
 
     [TestCase(16, 2, 4)]
- 
-    public void Multiply2Tests(int Expected, int First, int Second)
+    [TestCase(32, 8, 2)]
+     public void Multiply2Tests(int Expected, int First, int Second)
     {
         Assert.That(cal.Multiply2(First, Second), Is.EqualTo(Expected));
     }
