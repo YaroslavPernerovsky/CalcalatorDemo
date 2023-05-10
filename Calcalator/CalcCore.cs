@@ -22,6 +22,13 @@ namespace Calcalator
 			return x * y;
         }
 
+        /// <summary>
+        /// new code
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+
         public int Multiply2(int x, int y)
         {
             return x * y * 2;
