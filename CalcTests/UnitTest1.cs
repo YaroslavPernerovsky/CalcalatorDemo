@@ -29,6 +29,13 @@ public class Tests
         Assert.That(cal.Multiply(First, Second), Is.EqualTo(Expected));
     }
 
+    [TestCase(16, 2, 4)]
+ 
+    public void Multiply2Tests(int Expected, int First, int Second)
+    {
+        Assert.That(cal.Multiply2(First, Second), Is.EqualTo(Expected));
+    }
+
     [TestCase(5, 10, 2)]
     [TestCase(100, 1000, 10)]
     [TestCase(4, 8, 2)]
