@@ -14,8 +14,8 @@ public class Tests
 
     [TestCase(255, 0, 255)]
     [TestCase(1024, 1025, -1)]
-    [TestCase(int.MaxValue, 2147483641, 1)]
-    [TestCase(1000, 4400, 44400)]
+    [TestCase(int.MaxValue, 2147483646, 1)]
+    [TestCase(1000, 600, 400)]
     public void AdditionTest(int Expected, int First, int Second)
     {
         Assert.That(Expected, Is.EqualTo(cal.Add(First, Second)));
